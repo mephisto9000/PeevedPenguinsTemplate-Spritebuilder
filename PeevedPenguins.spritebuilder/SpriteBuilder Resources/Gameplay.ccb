@@ -196,6 +196,8 @@
 								<string>Bear.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -776,8 +778,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -811,8 +811,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>141</real>
-							<real>283.00003051757812</real>
+							<real>48</real>
+							<real>287.00003051757812</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
