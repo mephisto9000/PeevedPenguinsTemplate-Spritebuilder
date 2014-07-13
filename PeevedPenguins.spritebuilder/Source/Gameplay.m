@@ -141,7 +141,7 @@
 }
 
 - (void)sealRemoved:(CCNode *)seal {
-    [seal removeFromParent];
+
     
     CCParticleSystem *explosion = (CCParticleSystem *)[CCBReader load:@"SealExplosion"];
     // make the particle effect clean itself up, once it is completed
