@@ -86,7 +86,7 @@
         [_contentNode runAction:follow];
     }
 }
-
+ 
 
 -(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
