@@ -165,7 +165,7 @@
 					<key>value</key>
 					<array>
 						<real>311</real>
-						<real>131.5</real>
+						<real>267.5</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -203,7 +203,7 @@
 					<key>value</key>
 					<array>
 						<real>0.0</real>
-						<real>14</real>
+						<real>150</real>
 					</array>
 				</dict>
 				<dict>
@@ -213,8 +213,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>14</real>
-						<real>150</real>
+						<real>60</real>
+						<real>40</real>
 					</array>
 				</dict>
 				<dict>
