@@ -8,7 +8,7 @@
 
 #import "WaitingPenguin.h"
 
-@implementation WaitingPenguin 
+@implementation WaitingPenguin
 
 -(void) didLoadFromCCB
 {
@@ -16,7 +16,7 @@
     
     [self performSelector:@selector(startBlinkAndJump) withObject:nil afterDelay:delay];
 }
-
+ 
 - (void)startBlinkAndJump
 {
     // the animation manager of each node is stored in the 'animationManager' property
