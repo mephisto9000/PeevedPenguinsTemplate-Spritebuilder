@@ -44,10 +44,11 @@
     
     int xMin = _currentPenguin.boundingBox.origin.x;
     
+    /*
     if (xMin < (self.boundingBox.origin.x) - 0.5f) {
         [self nextAttempt];
         return;
-    }
+    }*/
     
     int xMax = xMin + _currentPenguin.boundingBox.size.width;
     
