@@ -5,7 +5,7 @@
 //  Created by Mus Bai on 12.07.14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
-
+#import "Penguin.h"
 #import "Gameplay.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 
@@ -21,7 +21,7 @@
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
     
-    CCNode *_currentPenguin;
+    Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
     
     CCAction *_followPenguin;
@@ -35,7 +35,8 @@
 -(void) update:(CCTime)delta
 {
     
-    
+    if (_currentPenguin.launched)
+    {
     if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED)
     {
         [self nextAttempt];
@@ -58,7 +59,7 @@
         return;
     }
     
-    
+    }
 }
 
 
@@ -93,7 +94,7 @@
         //_mouseJointNode = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode bodyB:<#(CCPhysicsBody *)#> anchorA:<#(CGPoint)#> anchorB:<#(CGPoint)#> restLength:<#(CGFloat)#> stiffness:<#(CGFloat)#> damping:<#(CGFloat)#>]
       _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
     
-        _currentPenguin = [CCBReader load:@"Penguin"];
+        _currentPenguin = (Penguin *)[CCBReader load:@"Penguin"];
         
         CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
         
