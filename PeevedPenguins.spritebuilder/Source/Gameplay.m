@@ -30,7 +30,7 @@
 
 
 
- static const float MIN_SPEED = 1.f;
+ static const float MIN_SPEED = 5.f;
 
 -(void) update:(CCTime)delta
 {
@@ -44,14 +44,14 @@
     
     int xMin = _currentPenguin.boundingBox.origin.x;
     
-    if (xMin < self.boundingBox.origin.x) {
+    if (xMin < (self.boundingBox.origin.x) - 0.5f) {
         [self nextAttempt];
         return;
     }
     
     int xMax = xMin + _currentPenguin.boundingBox.size.width;
     
-    if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width))
+    if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width) -0.5f)
     {
         [self nextAttempt];
         return;
@@ -141,7 +141,7 @@
     _currentPenguin = nil;
     [_contentNode stopAction:_followPenguin];
     
-    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration: 1.f position: ccp(1,0)];
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration: 1.f position: ccp(0,0)];
     [_contentNode runAction:actionMoveTo];
 }
 
