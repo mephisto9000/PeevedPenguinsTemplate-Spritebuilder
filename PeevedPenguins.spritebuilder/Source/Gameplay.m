@@ -45,7 +45,7 @@
         return;
     }
     
-    int xMax = xMax + _currentPenguin.boundingBox.size.width))
+    int xMax = xMax + _currentPenguin.boundingBox.size.width));
     {
         [self nextAttempt];
         return;
