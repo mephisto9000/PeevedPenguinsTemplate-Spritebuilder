@@ -49,7 +49,7 @@
         return;
     }
     
-    int xMax = xMax + _currentPenguin.boundingBox.size.width;
+    int xMax = xMin + _currentPenguin.boundingBox.size.width;
     
     if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width))
     {
