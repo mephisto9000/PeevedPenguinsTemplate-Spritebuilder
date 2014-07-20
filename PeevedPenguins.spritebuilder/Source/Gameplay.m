@@ -30,7 +30,7 @@
 
 
 
- static const float MIN_SPEED = 5.f;
+ static const float MIN_SPEED = 1.f;
 
 -(void) update:(CCTime)delta
 {
@@ -56,7 +56,7 @@
         [self nextAttempt];
         return;
     }
-     
+    
     
 }
 
