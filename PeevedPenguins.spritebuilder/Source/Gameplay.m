@@ -46,6 +46,8 @@
     }
     
     int xMax = xMax + _currentPenguin.boundingBox.size.width));
+    
+    if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width))
     {
         [self nextAttempt];
         return;
