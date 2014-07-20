@@ -35,7 +35,7 @@
 -(void) update:(CCTime)delta
 {
     
-    /*
+    
     if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED)
     {
         [self nextAttempt];
@@ -56,7 +56,7 @@
         [self nextAttempt];
         return;
     }
-     */
+     
     
 }
 
